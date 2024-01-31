@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateLogo = require('./generateLogo');
-const path = require('path')
+const path = require('path');
 
 // These are the array of questions to place in the automated README file
 const questions = [
