@@ -10,11 +10,29 @@ const questions = [
     type: 'input',
     name: 'text',
     message: 'What text would you like to include (Up to 3 characters)',
-  },
+    validate: function (input) {
+      if (input.length <= 3) {
+          return true; 
+      } else {
+          return 'Please enter up to 3 characters.';
+      }
+  }
+},
   {
     type: 'input',
     name: 'textColor',
-    message: 'What color would you like the text color to be? Enter a color keyword (OR a hexadecimal number)'
+    message: 'What color would you like the text color to be? Enter a color keyword (OR a hexadecimal number)',
+    validate: function (input) {
+      // Regular expression for validating either a color keyword or hexadecimal color code
+      const colorKeywordRegex = /^(red|green|blue|yellow|orange|purple|pink|brown|black|white|gray)$/i;
+      const hexColorRegex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
+
+      if (colorKeywordRegex.test(input) || hexColorRegex.test(input)) {
+          return true; // Valid color input
+      } else {
+          return 'Please enter a valid color keyword or a valid hexadecimal color code.';
+      }
+    },
   },
   {
     type: 'list',
@@ -25,7 +43,18 @@ const questions = [
   {
     type: 'input',
     name: 'color',
-    message: 'What color would you like your shape to be? Enter a color keyword (OR a hexadecimal number)'
+    message: 'What color would you like your shape to be? Enter a color keyword (OR a hexadecimal number)',
+    validate: function (input) {
+      // Regular expression for validating either a color keyword or hexadecimal color code
+      const colorKeywordRegex = /^(red|green|blue|yellow|orange|purple|pink|brown|black|white|gray)$/i;
+      const hexColorRegex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
+
+      if (colorKeywordRegex.test(input) || hexColorRegex.test(input)) {
+          return true; // Valid color input
+      } else {
+          return 'Please enter a valid color keyword or a valid hexadecimal color code.';
+      }
+    },
   }
 ];
 

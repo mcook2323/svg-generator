@@ -1,4 +1,4 @@
-<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="60" cy="60" r="50" fill="black" />
-    <text x="50%" y="60%" fill="blue" text-anchor="middle" dy=".3em">jjj</text>
+<svg width="120" height="100" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="60,10 110,90 10,90" fill="blue" stroke="black" stroke-width="2" />
+    <text x="50%" y="60%" fill="red" text-anchor="middle" dy=".3em">MTC</text>
   </svg>
