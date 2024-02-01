@@ -14,13 +14,18 @@ const questions = [
   {
     type: 'input',
     name: 'textColor',
-    message: 'What color would you like the text color to be? Enter a color keyword (OR a hexadecimal number)?'
+    message: 'What color would you like the text color to be? Enter a color keyword (OR a hexadecimal number)'
   },
   {
     type: 'list',
     name: 'shape',
     message: 'What shape would you like your logo to be?',
     choices: ['Triangle', 'Square', 'Circle']
+  },
+  {
+    type: 'input',
+    name: 'color',
+    message: 'What color would you like your shape to be? Enter a color keyword (OR a hexadecimal number)'
   }
 ];
 
