@@ -25,4 +25,6 @@
   ## Questions
   * Github profile: mcook2323
   * Email Address: n/a
-  * ![Watch the video](Untitled_%20Feb%202,%202024%207_57%20PM.gif)
+  
+  ## Walkthrough 
+   ![Watch the video](Untitled_%20Feb%202,%202024%207_57%20PM.gif)
